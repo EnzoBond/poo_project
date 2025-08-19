@@ -15,3 +15,11 @@ class Compra:
 nome_cliente = input("O nome do cliente é: ")
 mostrar_pag = Compra(nome_cliente)
 mostrar_pag.paga_imposto()
+
+class banco:
+    def __init__(self, saldo):
+        self.saldo = saldo
+
+    def retirar_saldo(self, numero):
+        if self.saldo < self.numero:
+            return self.saldo
